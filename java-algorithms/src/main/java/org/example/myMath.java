@@ -20,4 +20,11 @@ public class myMath {
         }
         return result;
     }
+
+    // Recursive Solution
+    static int factorialR(int n){
+        if(n == 1)
+            return 1;
+        return n * factorialR(n - 1);
+    }
 }
