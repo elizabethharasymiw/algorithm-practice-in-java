@@ -27,4 +27,27 @@ public class myMath {
             return 1;
         return n * factorialR(n - 1);
     }
+
+    /*
+    Fibonacci
+    F0 = 0
+    F1 = 1
+    F2 = 1 = F1 + F0
+    F3 = 2 = F2 + F1
+    F4 = 5 = F3 + F2
+    F5 = 8
+    F6 = 13
+    F7 = 21
+     */
+
+    static int fibonacciR(int n){
+        if(n == 1)
+            return 1;
+        if(n == 0)
+            return 0;
+        if( n < 0)
+            return -404;
+
+        return fibonacciR(n - 1) + fibonacciR(n - 2);
+    }
 }
