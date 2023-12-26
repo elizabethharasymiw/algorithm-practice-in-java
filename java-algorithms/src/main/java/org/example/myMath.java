@@ -40,6 +40,26 @@ public class myMath {
     F7 = 21
      */
 
+    static int fibonacciI(int n){
+        if (n < 0)
+            return -404;
+        if(n == 0)
+            return 0;
+        if(n == 1)
+            return 1;
+
+        int num1 = 0;
+        int num2 = 1;
+
+        for(int i = 2; i < n; i++){
+            int temp = num2;
+            num2 = num2 + num1;
+            num1 = temp;
+        }
+
+        return num1 + num2;
+    }
+
     static int fibonacciR(int n){
         if(n == 1)
             return 1;
